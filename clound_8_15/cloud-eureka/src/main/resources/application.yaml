@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cloud-eureka #服务名称  集群节点可以使用相同的实例名字
+server:
+  port: 9000 #端口
+eureka:
+  instance:
+    hostname: localhost:${server.port} #实例注册地址
+  client:
+    fetch-registry: false #是否从eureka中拉取服务
+    register-with-eureka: false # 是否注册到eureka
+    service-url:
+      defaultZone: http://${eureka.instance.hostname} #注册的协议地址访问名称

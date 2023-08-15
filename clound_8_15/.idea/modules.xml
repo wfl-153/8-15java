@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-generator/cloud-generator.iml" filepath="$PROJECT_DIR$/cloud-generator/cloud-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-member-consumer-cloud/cloud-member-consumer-cloud.iml" filepath="$PROJECT_DIR$/cloud-member-consumer-cloud/cloud-member-consumer-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-member-provider-cloud/cloud-member-provider-cloud.iml" filepath="$PROJECT_DIR$/cloud-member-provider-cloud/cloud-member-provider-cloud.iml" />
+    </modules>
+  </component>
+</project>
