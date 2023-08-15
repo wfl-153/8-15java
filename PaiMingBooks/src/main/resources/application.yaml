@@ -1,0 +1,43 @@
+spring:
+  redis:
+    cluster:
+      nodes:
+        - 192.168.189.3:6380
+        - 192.168.189.3:6381
+        - 192.168.189.3:6382
+        - 192.168.189.3:6383
+        - 192.168.189.3:6383
+        - 192.168.189.3:6384
+        - 192.168.189.3:6385
+      max-redirects: 3
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 8
+        min-idle: 5
+    timeout: 6000
+  datasource:
+    url: jdbc:mysql://192.168.189.3:3306/books?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: MySQL5.7#
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: mysql
+
+    druid:
+      initial-size: 10
+      min-idle: 10
+      max-active: 100
+      max-wait: 60000
+###mybatis-plus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+server:
+  port: 8083
+project:
+  redis:
+    booksKeyPrefix: '{project:books}:'
+    userKeyPrefix: '{project:users}:'
