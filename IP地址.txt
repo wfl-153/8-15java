@@ -1,0 +1,3 @@
+自动获取ip地址：netsh int ip set address name="以太网" source=dhcp
+设置ip地址：netsh interface ip set address “以太网” static 5.5.5.154 255.255.255.0 5.5.5.1
+设置ip地址：netsh interface ip set address “以太网” static 3.3.3.154 255.255.255.0
